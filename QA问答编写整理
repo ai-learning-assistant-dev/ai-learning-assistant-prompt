@@ -136,3 +136,18 @@ A：换linux了windows上面那个sig-kernel只支持到了2014年。
 
 ### Q: 谷歌账号国家问题，Gemini不让国内用。
 **A:** 换区域就行。
+
+### Q: 显示模型未加载。
+**A:** 检查模型选择，N卡选用index-tts模型，非N卡选择kokoro模型。
+
+### Q: 选用模型没问题，模型未加载。
+**A:** 注意模型名称，严格区分大小写，例：kokoro不能写成大写Kokoro。
+
+### Q: embedding模型出现无法调用情况。
+**A:** 模型管理中检查，模型可能未被识别成embedding模型。
+
+### Q: 自己在库里添加的pdf无法选择文本，原来自带的可以选择。
+**A:** pdf分图像型pdf和文本型pdf，图像型pdf本质是图片，需用OCR转化为文本。
+
+### Q: 报错“Cherry Studio不是有效的Win32应用程序”。
+**A:** 高版本electron不支持Win7。
